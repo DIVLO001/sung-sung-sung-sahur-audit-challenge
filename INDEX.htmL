@@ -1,38 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Final Project</title>
-    <link rel="stylesheet" href="Style.CSS" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="top">WELCOME TO OUR WEBSITE</div>
+    <!-- Header Section -->
+    <header class="top">
+      <h1>WELCOME TO OUR WEBSITE</h1>
+    </header>
 
-    <div>
-      <h1>Future Tech</h1>
+    <!-- Hero Section -->
+    <main>
+      <section class="hero">
+        <h2>Future Tech</h2>
+        <button>Get Started</button>
+        <img
+          src="images/hero-image.jpg"
+          alt="Futuristic Technology Illustration"
+        />
+      </section>
 
-      <button>Get Started</button>
-    </div>
+      <!-- About Section -->
+      <section class="about">
+        <h2>About Us</h2>
+        <p>We build amazing things for the future.</p>
+      </section>
 
-    <footer>Copyright 2026</footer>
+      <!-- Features Section -->
+      <section class="features">
+        <h2>Our Features</h2>
+        <div class="cards">
+          <div class="card">Fast</div>
+          <div class="card">Secure</div>
+          <div class="card">Modern</div>
+        </div>
+      </section>
 
-    <div class="about">
-      <p>We build amazing things for the future.</p>
+      <!-- Login / Signup Section -->
+      <section class="auth">
+        <h2>Login</h2>
+        <form action="login.html" method="POST">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
 
-      <h3>About Us</h3>
-    </div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
 
-    <div>Features coming soon</div>
+          <button type="submit">Login</button>
+        </form>
 
-    <a href="/LOGIN Page.html">Login</a>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+      </section>
+    </main>
 
-    <img src="HeroImage.JPG" />
-
-    <div class="cards">
-      <div>Fast</div>
-
-      <div>Secure</div>
-
-      <div>Modern</div>
-    </div>
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2026 Future Tech. All rights reserved.</p>
+    </footer>
   </body>
 </html>
